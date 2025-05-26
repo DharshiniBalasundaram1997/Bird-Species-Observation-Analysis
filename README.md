@@ -130,3 +130,27 @@ The findings aim to support **habitat conservation**, **biodiversity management*
 
 ---
 
+## ✨ Demo & Usage
+      1. Fetched the Uncleaned DataSet (in the xlsx format) and performing the data cleaning.
+		2. Execute Forest_Data_Cleaning.ipynb,Grassland_Data_Cleaning.ipynb [UnCleaned_Forest_DataSet.csv,UnCleaned_Grassland_DataSet.csv] and after data cleaning saved the csv files as Cleaned_Forest_DataSet.csv , Cleaned_Grassland_DataSet.csv
+      3. Execute EDA files Forest_EDA.ipynb, Grassland_EDA.ipynb
+		4. Combined the Forest + Land [Execute this file Forest_Grassland_EDA.ipynb]. Cleaning the excel files [Combined_UnCleanDataSet.csv -> Cleaned_Combined_DataSet.csv -> EDA_Combined_DataSet.csv]
+		5. Execute the above files in any IDE(VisualStudioCode) and for database for local use postgresql or for cloud use cloud streamlit
+      6. If using cloud, change the environment to cloud in config.json. IF using local database, then change the environment to local
+      7. Added the passwords in the password.toml folder (for local DB)
+                     Inside secrets.toml/password.toml:
+                         host = "localhost"
+                         user = "youruser"
+                         password = "yourpassword"
+                         database = "yourdbname"
+                         port = "5432"
+	   8. In db_utils.py: It has a Function to connect to the database
+		9. In SQL\config_secrets.py: Loading the environment details and Load secrets from your custom toml file
+		10.In SQL\db_setup.py: Setting up the birdspecies database
+		11. Execute the files in the order of:
+		           Forest_Data_Cleaning.ipynb,Grassland_Data_Cleaning.ipynb
+				   Forest_EDA.ipynb, Grassland_EDA.ipynb,Forest_Grassland_EDA.ipynb
+				   Forest_Sql.ipynb,Grassland_Sql.ipynb,Forest_Grassland_combined_Sql.ipynb
+		12. I have zipped [Forest_Sql.ipynb,Grassland_Sql.ipynb,Forest_Grassland_combined_Sql.ipynb] these 3 files in sql.7z
+		
+
