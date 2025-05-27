@@ -152,5 +152,6 @@ The findings aim to support **habitat conservation**, **biodiversity management*
 				   Forest_EDA.ipynb, Grassland_EDA.ipynb,Forest_Grassland_EDA.ipynb
 				   Forest_Sql.ipynb,Grassland_Sql.ipynb,Forest_Grassland_combined_Sql.ipynb
 		12. I have zipped [Forest_Sql.ipynb,Grassland_Sql.ipynb,Forest_Grassland_combined_Sql.ipynb] these 3 files in sql.7z
-		
 
+##  PowerBi Report
+https://app.powerbi.com/view?r=eyJrIjoiNzE4MDUwYzMtNTc5NS00NjA2LWFkYzYtNWE3NmEwYTFhNTk5IiwidCI6IjczY2UwZTg5LWRjMzUtNGExMC04NTMxLTFjYzJmMTgxNTUyZCJ9&embedImagePlaceholder=true
